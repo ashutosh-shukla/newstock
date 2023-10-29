@@ -7,6 +7,8 @@ import streamlit as st
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler  # Added missing import
 from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
+
 
 start = '2010-01-01'
 end = '2023-10-20'
