@@ -49,7 +49,9 @@ scaler = MinMaxScaler(feature_range=(0, 1))  # Added the missing closing parenth
 data_train_array = scaler.fit_transform(data_train)
 
 # Load your Keras model from the file
-model = load_model('keras_model.h5')
+# In the Streamlit app code, you load the model with Adam optimizer and learning rate 0.001
+model = load_model('keras_model.h5', custom_objects={'Adam': Adam(learning_rate=0.001)})
+
 
 # Continue with the rest of your code
 past_100 = data_train.tail(100)
