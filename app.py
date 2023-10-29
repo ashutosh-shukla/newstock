@@ -39,8 +39,9 @@ plt.plot(ma100)
 plt.plot(df.Close)
 st.pyplot(fig)
 
-data_train = pd.DataFrame(df['Close'][0:int(len(df) * 0.80)]
-data_test = pd.DataFrame(df['Close'][int(len(df) * 0.80):int(len(df))]
+data_train = pd.DataFrame(df['Close'][0:int(len(df) * 0.80)])
+data_test = pd.DataFrame(df['Close'][int(len(df) * 0.80):int(len(df)])
+
 
 from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler(feature_range=(0, 1)
