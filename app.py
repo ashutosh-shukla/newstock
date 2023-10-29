@@ -41,10 +41,11 @@ plt.plot(df['Close'])  # Added square brackets for 'Close'
 st.pyplot(fig)
 
 data_train = pd.DataFrame(df['Close'][0:int(len(df) * 0.80)])
-data_test = pd.DataFrame(df['Close'][int(len(df) * 0.80):int(len(df))]
+data_test = pd.DataFrame(df['Close'][int(len(df) * 0.80):int(len(df))])
 
 # Use MinMaxScaler
-scaler = MinMaxScaler(feature_range=(0, 1))
+scaler = MinMaxScaler(feature_range=(0, 1))  # Added the missing closing parenthesis
+
 data_train_array = scaler.fit_transform(data_train)
 
 # Load your Keras model from the file
