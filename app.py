@@ -26,7 +26,7 @@ st.pyplot(fig)
 
 st.subheader('Closing Price vs Time Chart with 100 Moving Average')
 ma100 = df.Close.rolling(100).mean()  # Add () to call the method
-fig = plt.figure(figsize=(12, 6)
+fig = plt.figure(figsize=(12, 6))
 plt.plot(ma100)
 plt.plot(df.Close)
 st.pyplot(fig)
