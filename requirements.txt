@@ -6,4 +6,4 @@ yfinance==0.1.66
 streamlit==1.8.0
 scikit-learn==0.24.2
 tensorflow==2.7.0
-custom_optimizer_module==1.0.0
+
