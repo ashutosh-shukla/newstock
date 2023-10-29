@@ -6,7 +6,7 @@ import yfinance as yfin
 import streamlit as st
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler  # Added missing import
-from keras.optimizers import Adam
+
 from tensorflow.keras.optimizers import Adam
 
 
